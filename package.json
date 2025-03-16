@@ -1,8 +1,8 @@
 {
   "name": "thesmur",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "homepage": "https://amritalok.github.io/TheSmur",
+  "homepage": "https://amritalok.github.io/thesmur",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build && next export",
