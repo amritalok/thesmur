@@ -10,9 +10,9 @@ export default function Portfolio() {
       <h1 className="mb-4 text-center">The Smur</h1>
 
       {/* Bootstrap grid for cards */}
-      <div className="row gy-4">
+      <div className="row">
         {collections.map((collection) => (
-          <div className="col-sm-12 col-md-6 col-lg-4" key={collection.id}>
+          <div className="col" key={collection.id}>
             <Collection {...collection} />
           </div>
         ))}
