@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
             <h5 className="text-uppercase">Follow Us</h5>
             <a href="https://www.instagram.com/the._.smur/" target="_blank" rel="noopener noreferrer">
-              <img src="/instagram.svg" alt="Instagram" width="30" height="30"></img>
+              <img src="/thesmur/instagram.svg" alt="Instagram" width="30" height="30"></img>
               <svg>instagram</svg>
             </a>
           </div>
