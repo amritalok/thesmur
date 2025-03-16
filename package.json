@@ -2,7 +2,7 @@
   "name": "thesmur",
   "version": "0.2.0",
   "private": true,
-  "homepage": "https://amritalok.github.io/thesmur",
+  "homepage": "https://thesmur.com",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build && next export",
