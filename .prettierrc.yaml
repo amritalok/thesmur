@@ -1,0 +1,5 @@
+singleQuote: true
+trailingComma: 'all'
+# This setting will force lines to conform to around 130 lines
+printWidth: 130
+semi: true
