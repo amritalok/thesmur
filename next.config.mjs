@@ -5,8 +5,8 @@ const nextConfig = {
   output: 'export',
 
   // (Optional) If hosting at /<repo-name> instead of root:
-  basePath: '/thesmur',
-  assetPrefix: '/thesmur/',
+  basePath: isProd ? '/thesmur' : '',
+  assetPrefix: isProd ? '/thesmur/' : '',
 };
 
 export default nextConfig;
