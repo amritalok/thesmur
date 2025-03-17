@@ -1,4 +1,6 @@
+'use client';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import collections from '../data/collections';
 
 export default function Portfolio() {
@@ -10,18 +12,21 @@ export default function Portfolio() {
         <div className="grid gap-6" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
           {collections.map((collection) => (
             <Link key={collection.id} href={`/collections/${collection.title.toLowerCase()}`} className="group block">
-              <div className="flex flex-col h-full bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition duration-300 group-hover:scale-105">
-                {/* Enforce a square container for the image */}
+              <motion.div
+                className="flex flex-col h-full bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
                 <div className="w-full aspect-square relative">
                   <img src={collection.imageUrl} alt={collection.title} className="absolute inset-0 w-full h-full object-cover" />
                 </div>
                 <div className="p-4 flex-grow flex flex-col justify-center">
-                  <h2 className="text-base sm:text-lg font-semibold font-heading text-gray-800 dark:text-gray-100 truncate">
+                  <h2 className="text-xl font-semibold font-heading text-gray-800 dark:text-gray-100 truncate">
                     {collection.title}
                   </h2>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">{collection.description}</p>
+                  <p className="text-gray-600 dark:text-gray-300 mt-1">{collection.description}</p>
                 </div>
-              </div>
+              </motion.div>
             </Link>
           ))}
         </div>

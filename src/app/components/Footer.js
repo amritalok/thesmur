@@ -8,8 +8,6 @@ export default function Footer() {
         <div className="mb-4 md:mb-0 text-center md:text-left">
           <h5 className="uppercase font-bold mb-2">Contact Us</h5>
           <p>Email: info@yourjewelry.com</p>
-          <p>Phone: (123) 456-7890</p>
-          <p>Address: 123 Jewelry Street, City, Country</p>
         </div>
         {/* Social Media */}
         <div className="text-center">
@@ -25,7 +23,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="bg-gray-800 text-center py-3">© {new Date().getFullYear()} Jewelry Portfolio. All rights reserved.</div>
+      <div className="bg-gray-800 text-center py-3">© {new Date().getFullYear()} The Smur. All rights reserved.</div>
     </footer>
   );
 }
