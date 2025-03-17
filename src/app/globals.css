@@ -1,27 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap');
+@import 'tailwindcss';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --color-primary: #b76e79; /* a chic rose-gold accent */
+  --color-gold: #d4af37; /* a luxurious gold accent */
+  --color-lightBg: #f8f8f8; /* light background for light mode */
+  --color-darkBg: #1f1f1f; /* dark background for dark mode */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
 
-/* Base styles */
-@layer base {
-  body {
-    @apply bg-lightBg dark:bg-darkBg text-gray-900 dark:text-gray-100 font-body;
-  }
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-lightBg);
+  color: #1f2937; /* Tailwind's gray-900 */
+}
+
+.dark-mode body {
+  background-color: var(--color-darkBg);
+  color: #f3f4f6; /* Tailwind's gray-100 */
 }
 
 /* Custom component styles */
-@layer components {
-  /* Minimalistic links */
-  .link {
-    @apply text-primary hover:underline;
-  }
-  /* Modern button style */
-  .btn {
-    @apply inline-block px-6 py-3 rounded-md font-semibold transition duration-300 ease-in-out;
-  }
-  .btn-primary {
-    @apply bg-gold text-white hover:bg-yellow-600;
-  }
+.link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--color-gold);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #b58929; /* a darker shade of gold */
 }
