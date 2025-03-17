@@ -1,14 +1,15 @@
 import Link from 'next/link';
 import collections from '../../data/collections';
+import Image from 'next/image';
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return collections.map((col) => ({
     collection: col.title.toLowerCase(),
   }));
 }
 
-export default function CollectionPage({ params }) {
-  const { collection } = params;
+export default async function CollectionPage({ params }) {
+  const { collection } = await params;
   const collectionData = collections.find((col) => col.title.toLowerCase() === collection.toLowerCase());
 
   if (!collectionData) {
@@ -30,7 +31,7 @@ export default function CollectionPage({ params }) {
           {collectionData.items.map((item) => (
             <Link key={item.id} href={`/collections/${collection}/${item.id}`} className="group block">
               <div className="flex flex-col h-full bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition duration-300 group-hover:scale-105">
-                <img src={item.imageUrl} alt={item.name} className="w-full h-48 object-cover" />
+                <Image src={item.imageUrl} alt={item.name} width={20} height={48} className="w-full h-48 object-cover" />
                 <div className="p-4 flex-grow flex flex-col justify-center text-center">
                   <h2 className="text-lg font-semibold font-heading text-gray-800 dark:text-gray-100">{item.name}</h2>
                   <p className="text-gray-600 dark:text-gray-400 mt-1">{item.description}</p>

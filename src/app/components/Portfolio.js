@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import collections from '../data/collections';
+import Image from 'next/image';
 
 export default function Portfolio() {
   return (
@@ -18,7 +19,13 @@ export default function Portfolio() {
                 transition={{ duration: 0.3 }}
               >
                 <div className="w-full aspect-square relative">
-                  <img src={collection.imageUrl} alt={collection.title} className="absolute inset-0 w-full h-full object-cover" />
+                  <Image
+                    src={collection.imageUrl}
+                    alt={collection.title}
+                    width={300}
+                    height={150}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-4 flex-grow flex flex-col justify-center">
                   <h2 className="text-xl font-semibold font-heading text-gray-800 dark:text-gray-100 truncate">

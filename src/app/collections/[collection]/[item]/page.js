@@ -2,7 +2,7 @@ import Link from 'next/link';
 import collections from '../../../data/collections';
 import Image from 'next/image';
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return collections.flatMap((col) =>
     col.items.map((item) => ({
       collection: col.title.toLowerCase(),
@@ -11,8 +11,8 @@ export function generateStaticParams() {
   );
 }
 
-export default function ItemPage({ params }) {
-  const { collection, item } = params;
+export default async function ItemPage({ params }) {
+  const { collection, item } = await params;
   const colData = collections.find((col) => col.title.toLowerCase() === collection.toLowerCase());
   if (!colData)
     return (
@@ -36,7 +36,7 @@ export default function ItemPage({ params }) {
           <Image
             src={itemData.imageUrl}
             alt={itemData.name}
-            layout="fill"
+            fill="fill"
             objectFit="contain"
             className="rounded-lg shadow-lg"
             priority
