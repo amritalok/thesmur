@@ -3,6 +3,7 @@ import Link from 'next/link';
 import collections from '../data/collections';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,8 +27,8 @@ export default function NavBar() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <Link href="/" className="text-3xl font-bold font-heading text-gray-800 dark:text-gray-100">
-            The Smur
+          <Link href="/">
+            <Image src="/thesmur.svg" width={8} height={8} alt="Instagram" className="w-30 h-15 inline-block" />
           </Link>
         </motion.div>
 
