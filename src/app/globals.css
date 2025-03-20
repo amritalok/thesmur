@@ -47,3 +47,18 @@ body {
 .btn-primary:hover {
   background-color: #b58929; /* a darker shade of gold */
 }
+/* Below style works with the popover API and CSS Anchor tag
+.menu-popover {
+  position: absolute;
+  position-anchor: --nav-button1;
+  top: anchor(top);
+  left: anchor(right);
+  transform: translate(-114%, -5%);
+  animation: fade-out 0.7s ease-out;
+  &:popover-open {
+    opacity: 0.9;
+    @starting-style {
+      opacity: 0;
+    }
+  }
+} */
