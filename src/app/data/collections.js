@@ -200,19 +200,19 @@ const collections = [
     items: [
       {
         id: 401,
-        name: 'Snake Studs',
+        name: 'Snake',
         imageUrl: '/hawaii_img/1.jpeg',
         description: 'A sleek bracelet with a minimalist design.',
       },
       {
         id: 402,
-        name: 'Butterfly Studs',
+        name: 'Butterfly',
         imageUrl: '/hawaii_img/2.jpeg',
         description: 'A sleek bracelet with a minimalist design.',
       },
       {
         id: 403,
-        name: 'Dolphin Studs',
+        name: 'Dolphin',
         imageUrl: '/hawaii_img/3.jpeg',
         description: 'A sleek bracelet with a minimalist design.',
       },
@@ -220,14 +220,26 @@ const collections = [
   },
   {
     id: 5,
-    title: 'New Yorker',
+    title: 'NewYorker',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
-    imageUrl: '/boston_img/boston.jpg',
+    imageUrl: '/ny_img/ny.jpg',
     items: [
       {
         id: 501,
-        name: 'Hoop',
-        imageUrl: '/boston_img/1.jpeg',
+        name: 'Hudson',
+        imageUrl: '/ny_img/1.jpeg',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 502,
+        name: 'Madison',
+        imageUrl: '/ny_img/2.jpeg',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 503,
+        name: 'Soho',
+        imageUrl: '/ny_img/3.jpeg',
         description: 'A sleek bracelet with a minimalist design.',
       },
     ],
