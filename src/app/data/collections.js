@@ -244,6 +244,50 @@ const collections = [
       },
     ],
   },
+  {
+    id: 6,
+    title: 'Florentini',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/florence_img/florence.jpg',
+    items: [
+      {
+        id: 601,
+        name: 'Arno',
+        imageUrl: '/florence_img/arno.JPEG',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 602,
+        name: 'Duomo',
+        imageUrl: '/florence_img/duomo.JPEG',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 603,
+        name: 'Fiorenza',
+        imageUrl: '/florence_img/fiorenza.JPEG',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 604,
+        name: 'Luna',
+        imageUrl: '/florence_img/luna.JPEG',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 605,
+        name: 'Medici',
+        imageUrl: '/florence_img/medici.JPEG',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 606,
+        name: 'Uffizi',
+        imageUrl: '/florence_img/uffizi.JPEG',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+    ],
+  },
 ];
 
 export default collections;
