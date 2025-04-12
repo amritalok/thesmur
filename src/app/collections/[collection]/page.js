@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 }
 
 export default async function CollectionPage({ params }) {
-  const { collection } = params;
+  const { collection } = await params;
   const collectionData = collections.find((col) => col.title.toLowerCase() === collection.toLowerCase());
 
   if (!collectionData) {
