@@ -1,6 +1,6 @@
 # Sample workflow for building and deploying a Next.js site to GitHub Pages
 #
-# To get started with Next.js see: https://nextjs.org/docs/getting-started
+# To get started with Next.js see: [https://nextjs.org/docs/getting-started](https://nextjs.org/docs/getting-started)
 #
 name: Deploy Next.js site to Pages
 
@@ -30,6 +30,8 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -61,7 +63,7 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           # Automatically inject basePath in your Next.js configuration file and disable
-          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
+          # server side image optimization ([https://nextjs.org/docs/api-reference/next/image#unoptimized).](https://nextjs.org/docs/api-reference/next/image#unoptimized).)
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
