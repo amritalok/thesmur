@@ -4,126 +4,126 @@ const collections = [
     id: 1,
     title: 'Indian',
     description: 'Traditional jewelry inspired by Indian art and craftsmanship.',
-    imageUrl: '/indian_img/india.jpg',
+    imageUrl: '/india_img/india.jpg',
     items: [
       {
         id: 101,
         name: 'Sitaara',
-        imageUrl: '/indian_img/sitaara.JPEG',
+        imageUrl: '/india_img/sitaara.JPEG',
         //description: 'An elegant necklace featuring intricate details.',
       },
       {
         id: 102,
         name: 'Virika',
-        imageUrl: '/indian_img/virika.JPEG',
+        imageUrl: '/india_img/virika.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 103,
         name: 'Nalini',
-        imageUrl: '/indian_img/nalini.JPEG',
+        imageUrl: '/india_img/nalini.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 104,
         name: 'Ashvini',
-        imageUrl: '/indian_img/ashvini.JPEG',
+        imageUrl: '/india_img/ashvini.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 105,
         name: 'Kalash',
-        imageUrl: '/indian_img/kalash.JPEG',
+        imageUrl: '/india_img/kalash.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 106,
         name: 'Rajasi',
-        imageUrl: '/indian_img/rajasi.JPEG',
+        imageUrl: '/india_img/rajasi.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 107,
         name: 'Rudraani',
-        imageUrl: '/indian_img/rudraani.JPEG',
+        imageUrl: '/india_img/rudraani.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 108,
         name: 'Samira',
-        imageUrl: '/indian_img/samira.JPEG',
+        imageUrl: '/india_img/samira.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 109,
         name: 'Kanaka',
-        imageUrl: '/indian_img/kanaka.JPEG',
+        imageUrl: '/india_img/kanaka.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 110,
         name: 'Aavani',
-        imageUrl: '/indian_img/aavani.JPEG',
+        imageUrl: '/india_img/aavani.JPEG',
         description: 'An elegant necklace featuring intricate details.',
       },
       {
         id: 111,
         name: 'Alara',
-        imageUrl: '/indian_img/alara.JPEG',
+        imageUrl: '/india_img/alara.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 112,
         name: 'Aaravi',
-        imageUrl: '/indian_img/aaravi.JPEG',
+        imageUrl: '/india_img/aaravi.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 113,
         name: 'Mohini',
-        imageUrl: '/indian_img/mohini.JPEG',
+        imageUrl: '/india_img/mohini.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 114,
         name: 'Ketaki in Green',
-        imageUrl: '/indian_img/ketakiG.JPEG',
+        imageUrl: '/india_img/ketakiG.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 115,
         name: 'Ketaki in Maroon',
-        imageUrl: '/indian_img/ketakiR.JPEG',
+        imageUrl: '/india_img/ketakiR.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 116,
         name: 'Noor in Beige',
-        imageUrl: '/indian_img/noor1.JPEG',
+        imageUrl: '/india_img/noor1.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 117,
         name: 'Noor in Maroon',
-        imageUrl: '/indian_img/noor2.JPEG',
+        imageUrl: '/india_img/noor2.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 118,
         name: 'Ruhani',
-        imageUrl: '/indian_img/ruhani.JPEG',
+        imageUrl: '/india_img/ruhani.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 119,
         name: 'Mohini',
-        imageUrl: '/indian_img/mohini.JPEG',
+        imageUrl: '/india_img/mohini.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
       {
         id: 120,
         name: 'Sayuri',
-        imageUrl: '/indian_img/sayuri.JPEG',
+        imageUrl: '/india_img/sayuri.JPEG',
         description: 'Stunning earrings that capture traditional beauty.',
       },
     ],
@@ -174,19 +174,19 @@ const collections = [
     items: [
       {
         id: 301,
-        name: 'Hoop',
+        name: 'Charles Hoop',
         imageUrl: '/boston_img/1.JPEG',
         description: 'A sleek bracelet with a minimalist design.',
       },
       {
         id: 302,
-        name: 'Hoop',
+        name: 'Beacon Hoop',
         imageUrl: '/boston_img/2.JPEG',
         description: 'A sleek bracelet with a minimalist design.',
       },
       {
         id: 303,
-        name: 'Hoop',
+        name: ' Fenway Hoop',
         imageUrl: '/boston_img/3.JPEG',
         description: 'A sleek bracelet with a minimalist design.',
       },
@@ -244,6 +244,180 @@ const collections = [
       },
     ],
   },
+  {
+    id: 6,
+    title: 'Florentini',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/florence_img/florence.jpg',
+    items: [
+      {
+        id: 601,
+        name: 'Arno',
+        imageUrl: '/florence_img/arno.JPEG',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 602,
+        name: 'Duomo',
+        imageUrl: '/florence_img/duomo.JPEG',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 603,
+        name: 'Fiorenza',
+        imageUrl: '/florence_img/fiorenza.JPEG',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 604,
+        name: 'Luna',
+        imageUrl: '/florence_img/luna.JPEG',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 605,
+        name: 'Medici',
+        imageUrl: '/florence_img/medici.JPEG',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 606,
+        name: 'Uffizi',
+        imageUrl: '/florence_img/uffizi.JPEG',
+        description: 'A sleek bracelet with a minimalist design.',
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: 'Amalfitani',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/amalfi_img/amalfi.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 8,
+    title: 'Arizonan',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/arizona_img/arizona.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 10,
+    title: 'Qatari',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/doha_img/doha.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 11,
+    title: 'Emirati',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/dubai_img/dubai.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 12,
+    title: 'Floridian',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/fl_img/florida.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 13,
+    title: 'Mainer',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/maine_img/maine.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 14,
+    title: 'Nevadan',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/nevada_img/nevada.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 15,
+    title: 'NewHampshirite',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/nh_img/nh.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 16,
+    title: 'NewJerseyan',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/nj_img/nj.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 17,
+    title: 'NewOrleanian',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/nola_img/nola.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 18,
+    title: 'Parisian',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/paris_img/paris.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 19,
+    title: 'Positanesi',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/positano_img/positano.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 20,
+    title: 'Ravellesi',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/ravello_img/ravello.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 21,
+    title: 'RhodeIslanders',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/ri_img/ri.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 22,
+    title: 'Utahn',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/utah_img/utah.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 23,
+    title: 'Washingtonian',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/washington_img/wdc.jpg',
+    items: [
+    ],
+  },
+
+
 ];
 
 export default collections;
