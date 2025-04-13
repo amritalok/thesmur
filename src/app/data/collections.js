@@ -185,7 +185,7 @@ const collections = [
         description: 'A sleek bracelet with a minimalist design.',
       },
       {
-        id: 301,
+        id: 303,
         name: 'Hoop',
         imageUrl: '/boston_img/3.JPEG',
         description: 'A sleek bracelet with a minimalist design.',

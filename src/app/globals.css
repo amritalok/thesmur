@@ -47,6 +47,12 @@ body {
 .btn-primary:hover {
   background-color: #b58929; /* a darker shade of gold */
 }
+
+@layer utilities {
+  .grid-cols-repeat-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
 /* Below style works with the popover API and CSS Anchor tag
 .menu-popover {
   position: absolute;
