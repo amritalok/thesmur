@@ -288,6 +288,136 @@ const collections = [
       },
     ],
   },
+  {
+    id: 7,
+    title: 'Amalfitani',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/amalfi_img/amalfi.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 8,
+    title: 'Arizonan',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/arizona_img/arizona.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 10,
+    title: 'Qatari',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/doha_img/doha.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 11,
+    title: 'Emirati',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/dubai_img/dubai.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 12,
+    title: 'Floridian',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/fl_img/florida.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 13,
+    title: 'Mainer',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/maine_img/maine.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 14,
+    title: 'Nevadan',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/nevada_img/nevada.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 15,
+    title: 'NewHampshirite',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/nh_img/nh.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 16,
+    title: 'NewJerseyan',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/nj_img/nj.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 17,
+    title: 'NewOrleanian',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/nola_img/nola.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 18,
+    title: 'Parisian',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/paris_img/paris.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 19,
+    title: 'Positanesi',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/positano_img/positano.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 20,
+    title: 'Ravellesi',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/ravello_img/ravello.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 21,
+    title: 'RhodeIslanders',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/ri_img/ri.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 22,
+    title: 'Utahn',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/utah_img/utah.jpg',
+    items: [
+    ],
+  },
+  {
+    id: 23,
+    title: 'Washingtonian',
+    description: 'Modern and chic matte gold pieces for a contemporary style.',
+    imageUrl: '/washington_img/wdc.jpg',
+    items: [
+    ],
+  },
+
+
 ];
 
 export default collections;
