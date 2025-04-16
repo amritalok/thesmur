@@ -187,7 +187,7 @@ const collections = [
       {
         id: 303,
         name: ' Fenway Hoop',
-        imageUrl: '/boston_img/3fenway.JPEG',
+        imageUrl: '/boston_img/fenway.JPEG',
         //description: 'A sleek bracelet with a minimalist design.',
       },
     ],
