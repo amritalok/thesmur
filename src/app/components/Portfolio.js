@@ -45,7 +45,7 @@ export default function Portfolio() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {collections.map((collection) => (
-            <Link key={collection.id} href={`/collections/${collection.title.toLowerCase()}`} className="group block">
+            <Link key={collection.id} href={`/collections/${collection.category}`} className="group block">
               <motion.div
                 className="flex flex-col h-full bg-white dark:bg-neutral-800 rounded-lg shadow-lg overflow-hidden"
                 whileHover={{ scale: 1.05 }}

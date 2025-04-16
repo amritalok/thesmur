@@ -5,7 +5,7 @@ import Image from 'next/image';
 export async function generateStaticParams() {
   return collections.flatMap((col) =>
     col.items.map((item) => ({
-      collection: col.title.toLowerCase(),
+      collection: col.category,
       item: item.id.toString(),
     })),
   );
@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 
 export default async function ItemPage({ params }) {
   const { collection, item } = await params;
-  const colData = collections.find((col) => col.title.toLowerCase() === collection.toLowerCase());
+  const colData = collections.find((col) => col.category === collection);
   if (!colData)
     return (
       <div className="container mx-auto p-4 text-center">

@@ -166,7 +166,7 @@ export default function NavBar() {
               {collections.map((col) => (
                 <Link
                   key={col.id}
-                  href={`/collections/${col.title.toLowerCase()}`}
+                  href={`/collections/${col.category}`}
                   className="block px-4 py-3 text-center text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 first:rounded-t-md last:rounded-b-md"
                   onClick={handleLinkClick}
                   data-collection-id={col.id}

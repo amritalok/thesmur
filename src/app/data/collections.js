@@ -2,6 +2,7 @@
 const collections = [
   {
     id: 1,
+    category: 'indian',
     title: 'Indian',
     description: 'Traditional jewelry inspired by Indian art and craftsmanship.',
     imageUrl: '/india_img/india.jpg',
@@ -130,6 +131,7 @@ const collections = [
   },
   {
     id: 2,
+    category: 'santorini',
     title: 'Santorinian',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/santorini_img/santorini.jpg',
@@ -168,6 +170,7 @@ const collections = [
   },
   {
     id: 3,
+    category: 'boston',
     title: 'Bostanian',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/boston_img/boston.jpg',
@@ -194,6 +197,7 @@ const collections = [
   },
   {
     id: 4,
+    category: 'hawaii',
     title: 'Hawaiian',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/hawaii_img/hawaii.jpg',
@@ -220,7 +224,8 @@ const collections = [
   },
   {
     id: 5,
-    title: 'NewYorker',
+    title: 'New Yorker',
+    category: 'newyork',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/ny_img/ny.jpg',
     items: [
@@ -247,6 +252,7 @@ const collections = [
   {
     id: 6,
     title: 'Florentini',
+    category: 'florence',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/florence_img/florence.jpg',
     items: [
@@ -291,133 +297,131 @@ const collections = [
   {
     id: 7,
     title: 'Amalfitani',
+    category: 'amalfi',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/amalfi_img/amalfi.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 8,
+    category: 'arizona',
     title: 'Arizonan',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/arizona_img/arizona.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 10,
     title: 'Qatari',
+    category: 'doha',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/doha_img/doha.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 11,
     title: 'Emirati',
+    category: 'dubai',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/dubai_img/dubai.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 12,
     title: 'Floridian',
+    category: 'florida',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/fl_img/florida.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 13,
+    category: 'maine',
     title: 'Mainer',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/maine_img/maine.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 14,
+    category: 'nevada',
     title: 'Nevadan',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/nevada_img/nevada.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 15,
+    category: 'newhampshire',
     title: 'NewHampshirite',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/nh_img/nh.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 16,
+    category: 'newjersey',
     title: 'NewJerseyan',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/nj_img/nj.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 17,
     title: 'NewOrleanian',
+    category: 'nola',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/nola_img/nola.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 18,
+    category: 'paris',
     title: 'Parisian',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/paris_img/paris.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 19,
+    category: 'positano',
     title: 'Positanesi',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/positano_img/positano.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 20,
+    category: 'ravello',
     title: 'Ravellesi',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/ravello_img/ravello.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 21,
+    category: 'ri',
     title: 'RhodeIslanders',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/ri_img/ri.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 22,
+    category: 'utah',
     title: 'Utahn',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/utah_img/utah.jpg',
-    items: [
-    ],
+    items: [],
   },
   {
     id: 23,
+    category: 'washington',
     title: 'Washingtonian',
     description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/washington_img/wdc.jpg',
-    items: [
-    ],
+    items: [],
   },
-
-
 ];
 
 export default collections;
