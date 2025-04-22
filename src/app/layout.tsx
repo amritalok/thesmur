@@ -24,8 +24,8 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={roboto.className}>
+      <AnalyticsProvider />
       <body className="flex flex-col min-h-screen overflow-x-hidden">
-        {/* {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && <AnalyticsProvider />} */}
         <NavBar />
         <main className="flex-grow pb-20">{children}</main>
         <Footer />

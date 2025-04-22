@@ -1,31 +1,37 @@
 // components/AnalyticsProvider.tsx
 'use client';
 
-import { ReactNode, useEffect } from 'react';
+import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { initGA, logPageView } from '@/utils/analytics';
 
-interface AnalyticsProviderProps {
-  children: ReactNode;
-}
-
-export default function AnalyticsProvider({ children }: AnalyticsProviderProps) {
+export default function AnalyticsProvider() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    // Initialize GA once on mount
-    initGA(process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string);
+    // Only initialize GA if we have a measurement ID and we're in production
+    const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+    const isProduction = process.env.NODE_ENV === 'production';
+
+    if (measurementId && isProduction) {
+      initGA(measurementId);
+    }
   }, []);
 
   useEffect(() => {
-    // Log page views when pathname or search params change
-    if (pathname) {
-      const queryString = searchParams.toString();
-      const path = queryString ? `${pathname}?${queryString}` : pathname;
-      logPageView(path);
+    // Track page views when pathname or search params change
+    const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+    const isProduction = process.env.NODE_ENV === 'production';
+
+    if (measurementId && isProduction) {
+      // Construct the full URL with search parameters
+      const url = searchParams.size > 0 ? `${pathname}?${searchParams.toString()}` : pathname;
+
+      logPageView(url);
     }
   }, [pathname, searchParams]);
 
-  return children;
+  // This component doesn't render anything visible
+  return null;
 }
