@@ -5,10 +5,10 @@ import { FC } from 'react';
 
 // Define types for our data structures
 interface ItemPageParams {
-  params: {
+  params: Promise<{
     collection: string;
     item: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -21,7 +21,7 @@ export async function generateStaticParams() {
 }
 
 const ItemPage: FC<ItemPageParams> = async ({ params }) => {
-  const { collection, item } = params;
+  const { collection, item } = await params;
   const colData = collections.find((col: Collection) => col.category === collection);
 
   if (!colData)

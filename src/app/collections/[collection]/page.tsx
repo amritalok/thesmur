@@ -10,13 +10,13 @@ export async function generateStaticParams() {
 }
 
 interface CollectionPageProps {
-  params: {
+  params: Promise<{
     collection: string;
-  };
+  }>;
 }
 
 export default async function CollectionPage({ params }: CollectionPageProps) {
-  const { collection } = params;
+  const { collection } = await params;
   const collectionData = collections.find((col: Collection) => col.category === collection);
 
   if (!collectionData) {
