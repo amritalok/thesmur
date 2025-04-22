@@ -1,17 +1,21 @@
-// components/AnalyticsProvider.js
+// components/AnalyticsProvider.tsx
 'use client';
 
-import { useEffect } from 'react';
+import { ReactNode, useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { initGA, logPageView } from '@/utils/analytics';
 
-export default function AnalyticsProvider({ children }) {
+interface AnalyticsProviderProps {
+  children: ReactNode;
+}
+
+export default function AnalyticsProvider({ children }: AnalyticsProviderProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   useEffect(() => {
     // Initialize GA once on mount
-    initGA(process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID);
+    initGA(process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string);
   }, []);
 
   useEffect(() => {

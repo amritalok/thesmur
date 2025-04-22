@@ -1,26 +1,38 @@
 import Link from 'next/link';
-import collections from '../../../data/collections';
+import collections, { Collection, CollectionItem } from '../../../data/collections';
 import Image from 'next/image';
+import { FC } from 'react';
+
+// Define types for our data structures
+interface ItemPageParams {
+  params: {
+    collection: string;
+    item: string;
+  };
+}
 
 export async function generateStaticParams() {
-  return collections.flatMap((col) =>
-    col.items.map((item) => ({
+  return collections.flatMap((col: Collection) =>
+    col.items.map((item: CollectionItem) => ({
       collection: col.category,
       item: item.id.toString(),
     })),
   );
 }
 
-export default async function ItemPage({ params }) {
-  const { collection, item } = await params;
-  const colData = collections.find((col) => col.category === collection);
+const ItemPage: FC<ItemPageParams> = async ({ params }) => {
+  const { collection, item } = params;
+  const colData = collections.find((col: Collection) => col.category === collection);
+
   if (!colData)
     return (
       <div className="container mx-auto p-4 text-center">
         <h2 className="text-2xl text-gray-800 dark:text-gray-100">Collection Not Found</h2>
       </div>
     );
-  const itemData = colData.items.find((i) => i.id.toString() === item);
+
+  const itemData = colData.items.find((i: CollectionItem) => i.id.toString() === item);
+
   if (!itemData)
     return (
       <div className="container mx-auto p-4 text-center">
@@ -36,8 +48,8 @@ export default async function ItemPage({ params }) {
           <Image
             src={itemData.imageUrl}
             alt={itemData.name}
-            fill="fill"
-            objectFit="contain"
+            fill={true}
+            style={{ objectFit: 'contain' }}
             className="rounded-lg shadow-lg"
             priority
           />
@@ -52,4 +64,6 @@ export default async function ItemPage({ params }) {
       </div>
     </div>
   );
-}
+};
+
+export default ItemPage;

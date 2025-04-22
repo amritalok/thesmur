@@ -1,17 +1,23 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import collections from '../../data/collections';
+import collections, { Collection, CollectionItem } from '../../data/collections';
 
 // For Next.js App Router
 export async function generateStaticParams() {
-  return collections.map((col) => ({
+  return collections.map((col: Collection) => ({
     collection: col.category,
   }));
 }
 
-export default async function CollectionPage({ params }) {
-  const { collection } = await params;
-  const collectionData = collections.find((col) => col.category === collection);
+interface CollectionPageProps {
+  params: {
+    collection: string;
+  };
+}
+
+export default async function CollectionPage({ params }: CollectionPageProps) {
+  const { collection } = params;
+  const collectionData = collections.find((col: Collection) => col.category === collection);
 
   if (!collectionData) {
     return (
@@ -33,7 +39,7 @@ export default async function CollectionPage({ params }) {
 
         {/* Modern CSS Grid with auto-fit for responsive design without media queries */}
         <div className="grid grid-cols-repeat-auto-fit gap-6">
-          {collectionData.items.map((item) => (
+          {collectionData.items.map((item: CollectionItem) => (
             <Link key={item.id} href={`/collections/${collection}/${item.id}`} className="group">
               <article
                 className="h-full bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden 

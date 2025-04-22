@@ -1,8 +1,10 @@
+// Footer.tsx
 'use client';
 
 import Image from 'next/image';
+import React from 'react';
 
-export default function Footer() {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
@@ -33,4 +35,6 @@ export default function Footer() {
       <div className="bg-gray-800 text-center py-3">© {new Date().getFullYear()} The Smur. All rights reserved.</div>
     </footer>
   );
-}
+};
+
+export default Footer;
