@@ -14,7 +14,10 @@ export default function AnalyticsProvider() {
     const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
     if (measurementId) {
+      console.log('Initializing GA with measurement ID:', measurementId);
       initGA(measurementId);
+    } else {
+      console.warn('No GA measurement ID found');
     }
   }, []);
 
