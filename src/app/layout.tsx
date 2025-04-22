@@ -4,7 +4,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { Roboto } from 'next/font/google';
 import AnalyticsProvider from './components/AnalyticsProvider';
-import { ReactNode } from 'react';
+import { ReactNode, Suspense } from 'react'; // Add Suspense import
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
@@ -24,8 +24,11 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={roboto.className}>
-      <AnalyticsProvider />
       <body className="flex flex-col min-h-screen overflow-x-hidden">
+        {/* Wrap AnalyticsProvider in Suspense */}
+        <Suspense fallback={null}>
+          <AnalyticsProvider />
+        </Suspense>
         <NavBar />
         <main className="flex-grow pb-20">{children}</main>
         <Footer />
