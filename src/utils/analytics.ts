@@ -1,13 +1,20 @@
 // utils/analytics.ts
 import ReactGA from 'react-ga4';
 
+declare global {
+  interface Window {
+    GA_INITIALIZED?: boolean;
+  }
+}
+
 /**
  * Initialize Google Analytics with the provided measurement ID
  * @param measurementId - The Google Analytics measurement ID
  */
 export const initGA = (measurementId: string): void => {
-  if (typeof window !== 'undefined' && process.env.NODE_ENV === 'production') {
+  if (typeof window !== 'undefined' && !window.GA_INITIALIZED) {
     ReactGA.initialize(measurementId);
+    window.GA_INITIALIZED = true;
   } else if (typeof window !== 'undefined') {
     console.log('GA initialized in development mode with ID:', measurementId);
   }

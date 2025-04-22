@@ -12,22 +12,16 @@ export default function AnalyticsProvider() {
   useEffect(() => {
     // Only initialize GA if we have a measurement ID and we're in production
     const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
-    const isProduction = process.env.NODE_ENV === 'production';
 
-    if (measurementId && isProduction) {
+    if (measurementId) {
       initGA(measurementId);
     }
   }, []);
 
   useEffect(() => {
-    // Track page views when pathname or search params change
-    const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
-    const isProduction = process.env.NODE_ENV === 'production';
-
-    if (measurementId && isProduction) {
+    if (window.GA_INITIALIZED) {
       // Construct the full URL with search parameters
       const url = searchParams.size > 0 ? `${pathname}?${searchParams.toString()}` : pathname;
-
       logPageView(url);
     }
   }, [pathname, searchParams]);
