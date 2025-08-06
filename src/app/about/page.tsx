@@ -1,5 +1,7 @@
-// src/app/about/page.js
-export default function About() {
+// src/app/about/page.tsx
+import { NextPage } from 'next';
+
+const About: NextPage = () => {
   return (
     <div className="min-h-screen py-8 bg-lightBg dark:bg-darkBg">
       <div className="container mx-auto px-4">
@@ -39,4 +41,6 @@ From writing code to curating jewelry, the journey from software developer to en
       </div>
     </div>
   );
-}
+};
+
+export default About;

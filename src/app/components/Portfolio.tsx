@@ -1,10 +1,13 @@
+// Portfolio.tsx
 'use client';
+
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import collections from '../data/collections';
+import collections, { Collection } from '../data/collections';
 import Image from 'next/image';
+import React from 'react';
 
-export default function Portfolio() {
+const Portfolio: React.FC = () => {
   return (
     <div className="min-h-screen py-8 bg-lightBg dark:bg-darkBg">
       <div className="container mx-auto px-4 text-center">
@@ -27,7 +30,7 @@ export default function Portfolio() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {collections.map((collection) => (
+          {collections.map((collection: Collection) => (
             <Link key={collection.id} href={`/collections/${collection.category}`} className="group block">
               <motion.div
                 className="flex flex-col h-full bg-white dark:bg-neutral-800 rounded-lg shadow-lg overflow-hidden"
@@ -68,4 +71,6 @@ export default function Portfolio() {
       </div>
     </div>
   );
-}
+};
+
+export default Portfolio;
