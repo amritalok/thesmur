@@ -3,7 +3,7 @@ const collections = [
   {
     id: 1,
     category: 'indian',
-    title: 'India',
+    title: 'INDIA',
     description: 'A tribute to timeless traditions and intricate artistry inspired by the richness of Indian culture.',
     imageUrl: '/india_img/india.jpg',
     items: [
@@ -132,7 +132,7 @@ const collections = [
   {
     id: 2,
     category: 'santorini',
-    title: 'Santorinian',
+    title: 'SANTORINI',
     description: 'Clean lines, blue hues, sunlit sparkle and luminous pearls that echo the Aegean’s serene beauty.',
     imageUrl: '/santorini_img/santorini.jpg',
     items: [
@@ -171,7 +171,7 @@ const collections = [
   {
     id: 3,
     category: 'boston',
-    title: 'Bostonian',
+    title: 'BOSTON',
     description: 'Classic charm and historic elegance pieces inspired by timeless architecture and city sophistication.',
     imageUrl: '/boston_img/boston.jpg',
     items: [
@@ -198,7 +198,7 @@ const collections = [
   {
     id: 4,
     category: 'hawaii',
-    title: 'Hawaiian',
+    title: 'HAWAII',
     description:
       'Laid-back elegance with a touch of aloha inspired by blooming florals, island vibes, and the beauty of wildlife.',
     imageUrl: '/hawaii_img/hawaii.jpg',
@@ -225,7 +225,7 @@ const collections = [
   },
   {
     id: 5,
-    title: 'New Yorker',
+    title: 'NEW YORK',
     category: 'newyork',
     description: 'Bold, modern, and effortlessly chic jewelry that mirrors the energy of the city that never sleeps.',
     imageUrl: '/ny_img/ny.jpg',
@@ -252,7 +252,7 @@ const collections = [
   },
   {
     id: 6,
-    title: 'Florentini',
+    title: 'FLORENCE',
     category: 'florence',
     description:
       'Romantic curves and Renaissance spirit,captured in golden detail, inspired by the genius of the city’s timeless art.',
@@ -298,7 +298,7 @@ const collections = [
   },
   {
     id: 7,
-    title: 'Floridian',
+    title: 'FLORIDA',
     category: 'florida',
     description: 'Tropical energy and sunshine sparkle,vacation vibes wrapped in golden glow and beachy bliss.',
     imageUrl: '/fl_img/florida.jpg',
@@ -325,7 +325,7 @@ const collections = [
   },
   {
     id: 8,
-    title: 'Washingtonian',
+    title: 'WASHINGTON DC',
     category: 'washington',
     description: 'Grace, bloom, and brilliance, seasonal symbols of the capital captured in every detail.',
     imageUrl: '/washington_img/wdc.jpg',
@@ -334,7 +334,7 @@ const collections = [
 
   {
     id: 9,
-    title: 'Parisian',
+    title: 'PARIS',
     category: 'paris',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/paris_img/paris.jpg',
@@ -342,7 +342,7 @@ const collections = [
   },
   {
     id: 10,
-    title: 'Qatari',
+    title: 'DOHA',
     category: 'doha',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/doha_img/doha.jpg',
@@ -350,7 +350,7 @@ const collections = [
   },
   {
     id: 11,
-    title: 'Emirati',
+    title: 'DUBAI',
     category: 'dubai',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/dubai_img/dubai.jpg',
@@ -358,7 +358,7 @@ const collections = [
   },
   {
     id: 12,
-    title: 'Arizonan',
+    title: 'ARIZONA',
     category: 'arizona',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/arizona_img/arizona.jpg',
@@ -367,7 +367,7 @@ const collections = [
   {
     id: 13,
     category: 'maine',
-    title: 'Mainer',
+    title: 'MAINE',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/maine_img/maine.jpg',
     items: [],
@@ -375,7 +375,7 @@ const collections = [
   {
     id: 14,
     category: 'nevada',
-    title: 'Nevadan',
+    title: 'NEVADA',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/nevada_img/nevada.jpg',
     items: [],
@@ -383,7 +383,7 @@ const collections = [
   {
     id: 15,
     category: 'newhampshire',
-    title: 'New Hampshirite',
+    title: 'NEW HAMPSHIRE',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/nh_img/nh.jpg',
     items: [],
@@ -391,14 +391,14 @@ const collections = [
   {
     id: 16,
     category: 'newjersey',
-    title: 'New Jerseyan',
+    title: 'NEW JERSEY',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/nj_img/nj.jpg',
     items: [],
   },
   {
     id: 17,
-    title: 'New Orleanian',
+    title: 'NEW ORLEANS',
     category: 'nola',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/nola_img/nola.jpg',
@@ -406,7 +406,7 @@ const collections = [
   },
   {
     id: 18,
-    title: 'Utahn',
+    title: 'UTAH',
     category: 'utah',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/utah_img/utah.jpg',
@@ -414,8 +414,8 @@ const collections = [
   },
   {
     id: 19,
+    title: 'POSITANO',
     category: 'positano',
-    title: 'Positanesi',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/positano_img/positano.jpg',
     items: [],
@@ -423,7 +423,7 @@ const collections = [
   {
     id: 20,
     category: 'ravello',
-    title: 'Ravellesi',
+    title: 'RAVELLO',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/ravello_img/ravello.jpg',
     items: [],
@@ -431,14 +431,14 @@ const collections = [
   {
     id: 21,
     category: 'ri',
-    title: 'Rhode Islanders',
+    title: 'RHODE ISLAND',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/ri_img/ri.jpg',
     items: [],
   },
   {
     id: 22,
-    title: 'Amalfitani',
+    title: 'AMALFI',
     category: 'amalfi',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/amalfi_img/amalfi.jpg',
