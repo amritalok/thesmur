@@ -36,7 +36,7 @@ export default function Portfolio() {
             </p>
 
             <p className="text-center font-medium text-[var(--color-gold)]">
-              💛 <em>Discover The Smur, Wear the world.</em> 💛
+              💛 <em> Wear The SMUR, Discover The World </em> 💛
             </p>
           </div>
           <div className="absolute top-2 right-2 w-8 h-8 border-t-2 border-r-2 border-[var(--color-gold)]/40 dark:border-[var(--color-gold)]/20 rounded-tr-lg"></div>

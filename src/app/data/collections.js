@@ -3,7 +3,7 @@ const collections = [
   {
     id: 1,
     category: 'indian',
-    title: 'Indian',
+    title: 'India',
     description: 'A tribute to timeless traditions and intricate artistry inspired by the richness of Indian culture.',
     imageUrl: '/india_img/india.jpg',
     items: [
@@ -171,7 +171,7 @@ const collections = [
   {
     id: 3,
     category: 'boston',
-    title: 'Bostanian',
+    title: 'Bostonian',
     description: 'Classic charm and historic elegance pieces inspired by timeless architecture and city sophistication.',
     imageUrl: '/boston_img/boston.jpg',
     items: [
