@@ -1,5 +1,7 @@
-// src/app/contact/page.js
-export default function Contact() {
+// src/app/contact/page.tsx
+import React from 'react';
+
+const Contact: React.FC = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-lightBg dark:bg-darkBg py-8">
       <div className="w-full max-w-lg bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
@@ -33,7 +35,7 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
-              rows="5"
+              rows={5}
               placeholder="Your Message"
               className="mt-1 block w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100"
             ></textarea>
@@ -48,4 +50,6 @@ export default function Contact() {
       </div>
     </div>
   );
-}
+};
+
+export default Contact;

@@ -1,5 +1,22 @@
-// data/collections.js
-const collections = [
+// data/collections.ts
+
+export interface CollectionItem {
+  id: number;
+  name: string;
+  imageUrl: string;
+  description?: string;
+}
+
+export interface Collection {
+  id: number;
+  category: string;
+  title: string;
+  description?: string;
+  imageUrl: string;
+  items: CollectionItem[];
+}
+
+const collections: Collection[] = [
   {
     id: 1,
     category: 'indian',

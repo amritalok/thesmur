@@ -1,54 +1,56 @@
+// NavBar.tsx
 'use client';
+
 import Link from 'next/link';
-import collections from '../data/collections';
-import { useState, useRef, useEffect } from 'react';
+import collections, { Collection } from '../data/collections';
+import { useState, useRef, useEffect, MouseEvent, KeyboardEvent } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-export default function NavBar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [collectionsOpen, setCollectionsOpen] = useState(false);
-  const [isClicking, setIsClicking] = useState(false);
-  const dropdownRef = useRef(null);
-  const navbarRef = useRef(null);
+const NavBar: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [collectionsOpen, setCollectionsOpen] = useState<boolean>(false);
+  const [isClicking, setIsClicking] = useState<boolean>(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const navbarRef = useRef<HTMLElement>(null);
 
   // Close dropdown when clicking outside
   useEffect(() => {
-    function handleClickOutside(event) {
+    function handleClickOutside(event: MouseEvent): void {
       if (
         dropdownRef.current &&
-        !dropdownRef.current.contains(event.target) &&
+        !dropdownRef.current.contains(event.target as Node) &&
         navbarRef.current &&
-        navbarRef.current.contains(event.target)
+        navbarRef.current.contains(event.target as Node)
       ) {
         setCollectionsOpen(false);
       }
     }
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside as unknown as EventListener);
+    return () => document.removeEventListener('mousedown', handleClickOutside as unknown as EventListener);
   }, []);
 
   // Handle keyboard navigation
   useEffect(() => {
-    const handleEscape = (e) => {
+    const handleEscape = (e: KeyboardEvent): void => {
       if (e.key === 'Escape' && collectionsOpen) {
         setCollectionsOpen(false);
       }
     };
 
-    document.addEventListener('keydown', handleEscape);
-    return () => document.removeEventListener('keydown', handleEscape);
+    document.addEventListener('keydown', handleEscape as unknown as EventListener);
+    return () => document.removeEventListener('keydown', handleEscape as unknown as EventListener);
   }, [collectionsOpen]);
 
   // Handle dropdown timing
-  const handleMouseEnter = () => {
+  const handleMouseEnter = (): void => {
     if (window.innerWidth >= 768) {
       setCollectionsOpen(true);
     }
   };
 
-  const handleMouseLeave = () => {
+  const handleMouseLeave = (): void => {
     if (window.innerWidth >= 768 && !isClicking) {
       // Use timeout to prevent immediate closing
       setTimeout(() => {
@@ -60,18 +62,18 @@ export default function NavBar() {
   };
 
   // Toggle dropdown on click (for mobile)
-  const toggleCollections = (e) => {
+  const toggleCollections = (e: React.MouseEvent): void => {
     e.preventDefault();
     e.stopPropagation();
     setCollectionsOpen(!collectionsOpen);
   };
 
   // Handle click tracking
-  const handleMouseDown = () => {
+  const handleMouseDown = (): void => {
     setIsClicking(true);
   };
 
-  const handleMouseUp = () => {
+  const handleMouseUp = (): void => {
     // Small delay to ensure the click event completes
     setTimeout(() => {
       setIsClicking(false);
@@ -79,7 +81,7 @@ export default function NavBar() {
   };
 
   // Handle link click with navigation
-  const handleLinkClick = (e) => {
+  const handleLinkClick = (): void => {
     // Don't immediately close dropdown to allow navigation to complete
     setTimeout(() => {
       setCollectionsOpen(false);
@@ -163,7 +165,7 @@ export default function NavBar() {
               onMouseUp={handleMouseUp}
               aria-labelledby="nav-collections-dropdown"
             >
-              {collections.map((col) => (
+              {collections.map((col: Collection) => (
                 <Link
                   key={col.id}
                   href={`/collections/${col.category}`}
@@ -180,4 +182,6 @@ export default function NavBar() {
       </div>
     </header>
   );
-}
+};
+
+export default NavBar;
