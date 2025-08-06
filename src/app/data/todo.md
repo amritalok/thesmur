@@ -1,0 +1,5 @@
+- Change the Collection dropdown
+- Include 3 three continents (Asia,USA,Europe)
+- Filter the category continent wise
+- include one button for catalogue
+- include one button to place the order via whatsapp
