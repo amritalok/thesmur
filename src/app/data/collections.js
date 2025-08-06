@@ -331,7 +331,6 @@ const collections = [
     imageUrl: '/washington_img/wdc.jpg',
     items: [],
   },
-
   {
     id: 9,
     title: 'PARIS',
@@ -442,7 +441,26 @@ const collections = [
     category: 'amalfi',
     //description: 'Modern and chic matte gold pieces for a contemporary style.',
     imageUrl: '/amalfi_img/amalfi.jpg',
-    items: [],
+    items: [
+      {
+        id: 2201,
+        name: 'Azzurra',
+        imageUrl: '/amalfi_img/azzurra.JPEG',
+        //description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 2202,
+        name: 'Roccia',
+        imageUrl: '/amalfi_img/roccia.JPEG',
+        //description: 'A sleek bracelet with a minimalist design.',
+      },
+      {
+        id: 2203,
+        name: 'Strada',
+        imageUrl: '/amalfi_img/strada.JPEG',
+        //description: 'A sleek bracelet with a minimalist design.',
+      },
+    ],
   },
 ];
 
