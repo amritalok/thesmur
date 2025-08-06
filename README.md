@@ -4,7 +4,32 @@ This is a portfolio project for a jewelry business, built with Next.js and Tailw
 
 ## Prerequisites
 
-Make sure you have [pnpm](https://pnpm.io/installation) installed on your system.
+Before you begin, ensure you have [pnpm](https://pnpm.io/installation) installed on your system.
+
+### Installing pnpm
+
+You can install pnpm using one of the following commands, depending on your operating system.
+
+**Windows (via PowerShell):**
+
+Open PowerShell as Administrator and run:
+```powershell
+iwr https://get.pnpm.io/install.ps1 -useb | iex
+```
+
+**macOS (via Homebrew):**
+
+```bash
+brew install pnpm
+```
+
+**Linux (or other systems with curl):**
+
+```bash
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+```
+
+After installation, you may need to restart your terminal or run the command suggested by the installer to add `pnpm` to your system's PATH.
 
 ## Getting Started
 
