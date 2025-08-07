@@ -1,5 +1,7 @@
-- Change the Collection dropdown
+- Change the Collection dropdown it will have only three main categories
+- include one button for request product catalogue which will give access to the drive which will all the pictures with price
+- how to place an order page
+- Include a button to chat on whatsAPP to place order
 - Include 3 three continents (Asia,USA,Europe)
 - Filter the category continent wise
-- include one button for catalogue
-- include one button to place the order via whatsapp
+- 
